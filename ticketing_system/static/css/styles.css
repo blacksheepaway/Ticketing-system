@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+  
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  header {
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    background: #4caf50;
+    border-bottom: #388e3c 3px solid;
+  }
+  
+  header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+  
+  header ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+  }
+  
+  header #branding {
+    float: left;
+  }
+  
+  header #branding h1 {
+    margin: 0;
+  }
+  
+  header nav {
+    float: right;
+    margin-top: 10px;
+  }
+  
+  header .highlight, header .current a {
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+  }
+  
+  h1, h2, h3 {
+    padding-bottom: 20px;
+  }
+  
+  /* Add some basic alignment for the content */
+  .container > * {
+    margin-bottom: 1rem;
+  }
+
+  .ticket-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+  
+.ticket-card {
+    background-color: #e8f5e9;
+    border: 1px solid #4caf50;
+    border-radius: 4px;
+    padding: 16px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+    transition: box-shadow 0.3s ease;
+}
+  
+.ticket-card h3 {
+    margin-top: 0;
+    color: #4caf50;
+    font-size: 24px;
+}
+
+.ticket-card a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+.ticket-card a:hover {
+    text-decoration: underline;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}

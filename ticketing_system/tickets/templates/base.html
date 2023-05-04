@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}Ticketing System{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    {% if user.is_authenticated %}
+        <p>Welcome, {{ user.username }}! <a href="{% url 'logout' %}">Logout</a></p>
+    {% else %}
+        <p><a href="{% url 'login' %}">Login</a></p>
+    {% endif %}
+    {% block content %}
+    {% endblock %}
+
+    {% if user.is_authenticated %}
+    <p>Welcome, {{ user.username }}! <a href="{% url 'logout' %}">Logout</a> | <a href="{% url 'ticket_overview' %}">Ticket Overview</a> | <a href="{% url 'ticket_create' %}">Create New Ticket</a></p>
+    {% else %}
+    <p><a href="{% url 'login' %}">Login</a></p>
+    {% endif %}
+
+
+    <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>

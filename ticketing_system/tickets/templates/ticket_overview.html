@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Ticket Overview{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <h2>Ticket Overview</h2>
+    <div class="ticket-grid">
+      {% for ticket in tickets %}
+        <div class="ticket-card">
+          <h3>{{ ticket.title }}</h3>
+          <p>{{ ticket.description|truncatechars:100 }}</p>
+          <a href="{% url 'ticket_detail' ticket.pk %}">View Ticket</a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}
+
+
