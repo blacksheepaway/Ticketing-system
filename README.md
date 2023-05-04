@@ -21,7 +21,7 @@ Example
 
 When the Ticketing System application is run, users can log in and view a list of existing tickets. Users can create new tickets, view the details of a specific ticket, update the ticket's information, and mark the ticket as complete. The application provides an intuitive interface for managing tickets and tracking progress.
 
-![Ticketing System Example](example-image-url)
+![image](https://user-images.githubusercontent.com/50200471/236091737-993b2927-ed0c-4e13-8d0b-5deb0336fb77.png)
 
 Modification for Other Applications
 -----------------------------------
